@@ -1,0 +1,7 @@
+@import url('./reset.css');
+@import url('./normalize.css');
+@import url('./base.css');
+
+@import url('./components//headear.css');
+@import url('./components/casino-card.css');
+@import url('./components/footer.css');

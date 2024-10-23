@@ -1,0 +1,115 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0em;
+  font-weight: 400;
+  background-color: rgb(27, 2, 37);
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 12px;
+  margin: 0 auto;
+  @media only screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  @media only screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 0 64px;
+  }
+}
+
+.section {
+  /* padding-bottom: 80px; */
+  @media only screen and (min-width: 768px) {
+    /* padding-bottom: 100px; */
+  }
+  @media only screen and (min-width: 1280px) {
+    /* padding-bottom: 150px; */
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ffa500, #ff69b4, #87ceeb);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.accent {
+  display: inline-block;
+  margin: 0 auto;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: linear-gradient(to right, #ffa500, #ff69b4, #87ceeb);
+  padding: 10px 20px;
+  animation: pulse 1s infinite;
+  transition: transform 0.3s ease;
+}
+
+.info-container {
+  margin-bottom: 24px;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.btn {
+  display: block;
+  margin: 0 auto 24px;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: linear-gradient(to right, #ffa500, #ff69b4, #87ceeb);
+  padding: 10px;
+  @media only screen and (min-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 32px;
+    border-radius: 36px;
+  }
+}
+
+.accent:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
